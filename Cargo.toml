@@ -1,0 +1,14 @@
+[package]
+name = "m5core2-pio-rust"
+edition = "2021"
+version = "0.1.0"
+
+[lib]
+path = "src/lib.rs"
+name = "m5core2_pio_rust"
+edition = "2021"
+crate-type = ["staticlib"]
+required-features = []
+
+[dependencies]
+esp-idf-sys = { version = "0.31", features = ["pio"] }
